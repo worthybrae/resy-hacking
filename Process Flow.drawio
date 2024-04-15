@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net" modified="2024-04-15T19:42:13.367Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="MzTOjRzGUiJcJHrskMRs" version="24.2.5" type="device">
+  <diagram name="Page-1" id="x2zoM8Dxg4t0UcZRvH4M">
+    <mxGraphModel dx="878" dy="1631" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cyTFHh-lkW60vGuorPK--1" value="OYSTER&lt;div&gt;(internal DB)&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+          <mxGeometry x="450" y="50" width="125" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="cyTFHh-lkW60vGuorPK--10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="cyTFHh-lkW60vGuorPK--3" target="cyTFHh-lkW60vGuorPK--8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cyTFHh-lkW60vGuorPK--3" value="TASK QUEUE&lt;div&gt;(Celery)&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="190" y="280" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cyTFHh-lkW60vGuorPK--9" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="400" y="190" width="260" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="cyTFHh-lkW60vGuorPK--8" value="CELERY TASK QUEUE&lt;div&gt;(8 Workers)&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="cyTFHh-lkW60vGuorPK--9" vertex="1">
+          <mxGeometry width="260" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="cyTFHh-lkW60vGuorPK--7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="cyTFHh-lkW60vGuorPK--9" source="cyTFHh-lkW60vGuorPK--4" target="cyTFHh-lkW60vGuorPK--6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cyTFHh-lkW60vGuorPK--4" value="BUILD&lt;br&gt;RESERVATION&lt;br&gt;TOKEN" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="cyTFHh-lkW60vGuorPK--9" vertex="1">
+          <mxGeometry x="70" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cyTFHh-lkW60vGuorPK--6" value="BOOK&lt;br&gt;RESERVATION&lt;br&gt;WITH TOKEN" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="cyTFHh-lkW60vGuorPK--9" vertex="1">
+          <mxGeometry x="70" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cyTFHh-lkW60vGuorPK--13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="cyTFHh-lkW60vGuorPK--11" target="cyTFHh-lkW60vGuorPK--12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cyTFHh-lkW60vGuorPK--11" value="At&amp;nbsp;&lt;div&gt;Start&amp;nbsp;&lt;div&gt;Time&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="-110" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cyTFHh-lkW60vGuorPK--12" value="Check all user log&amp;nbsp;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="180" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JzCtTXsRzkTABICdJCOT-1" value="&amp;nbsp;get 3 random users" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="-140" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

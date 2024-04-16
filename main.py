@@ -1,12 +1,19 @@
-from dotenv import load_dotenv
-import os
-from pymongo import MongoClient
+from objects.profile import Profiles
+from helpers.database import get_restaurants, get_tables
 
 
-load_dotenv(override=True)
+def initialize(reservation_mins):
+    profiles_obj = Profiles()
+    if profiles_obj.active:
+        print(len(profiles_obj.profiles))
+        profiles_obj.random_selection()
+        print(len(profiles_obj.profiles))
+        profiles_obj.update_tokens()
+        restaraunts_data = get_restaurants()
+        venues = [x.venue_id for x in restaraunts_data]
+        tables_data = get_tables(venues)
+        
 
 
-def initialize(reservation_time):
-    oyster = MongoClient(os.getenv('MONGO_URL'))
-    oyster = oyster['oyster']
-    profiles = get_profiles(oyster)
+
+initialize(540)

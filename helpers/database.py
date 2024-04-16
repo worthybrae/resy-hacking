@@ -9,7 +9,6 @@ from objects.restaraunt import Restaraunt
 load_dotenv(override=True)
 
 def get_profiles():
-
     id = quote_plus(os.getenv('MONGO_ID'))
     db = quote_plus(os.getenv('MONGO_DB'))
     username = quote_plus(os.getenv('MONGO_USER'))
